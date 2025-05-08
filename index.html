@@ -1,8 +1,85 @@
-<!DOCTYPE html>
-<html>
-    <head><link rel="icon" src="favicon-32x32.png"></head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .nav {
+            background-color: #444;
+            padding: 10px 0;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+        }
+        .nav a:hover {
+            background-color: #555;
+        }
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .image-grid img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border: 2px solid #333;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .image-grid img:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="header">
+        <h1>Welcome</h1>
+    </div>
+    <div class="content">
+        <h2><i>WishingWellLandscaping</i></h2>
+        <div class="image-grid">
+            <a href="services.html"><img src="https://via.placeholder.com/200x150?text=Services" alt="Our Services"></a>
+            <a href="pricing.html"><img src="https://via.placeholder.com/200x150?text=Pricing" alt="Pricing"></a>
+            <a href="contact.html"><img src="https://via.placeholder.com/200x150?text=Contact" alt="Contact Us"></a>
+        </div>
+        <p>Click on the links above for info about services, pricing, or how to get in touch!</p>
+    </div>
+    <div class="footer">
+        <p></p>
+    </div>
 </body>
 </html>
